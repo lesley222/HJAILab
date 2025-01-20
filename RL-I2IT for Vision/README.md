@@ -1,7 +1,7 @@
-# <center> RL-I2IT for Vision
+# 🎈  <center> RL-I2IT for Vision
 
 
-### 1. Face Inpainting
+## 1. Face Inpainting
 
 - **Pipline**
   1. **State Definition**: Use the original image with a missing region (center cropped) as the initial state, and the next state is obtained by adding the new predicted image to the missing region.
@@ -19,7 +19,7 @@
   <img src="../Figures/resultfaceip2_new.jpg" align="middle" width = "600"/>
 <p>
 
-### 2. Realistic Photo Translation
+## 2. Realistic Photo Translation
 
 - **Pipline**
   1. **State Definition**: Directly use the source image as the initial state. The next state is obtained by warping the generated image to the source image.
@@ -30,7 +30,7 @@
   <img src="../Figures/resmasktoimg.jpg" align="middle" width = "600"/>
 <p>
 
-### 3. Image Style Transfer
+## 3. Image Style Transfer
 
 - **Pipeline**:
   1. **State Definition**: Set the moving image as state \(s_t\), which is initialized by the content image. The moving image at time \(t\), i.e., state image \(s_{t + 1}\), is created by the actor and current state image \(s_t\) and plan \(p_t\).
@@ -45,7 +45,7 @@
   - RL-I2IT provides a new solution for neural style transfer. It can learn a lightweight NST model that is applied iteratively for NST and allows a user to control the stylization degree easily.
   - RL-NST (step = 1) achieves better performance than the baseline methods in all evaluation metrics on the MS - COCO dataset. Our method still has low content and style losses even if the step is equivalent to 10. A user survey shows that the results of our algorithm are favored by the most subjects.
 
-### 4. Video Style Transfer
+## 4. Video Style Transfer
 
 - **Pipeline**:
   1. **State and Network Architecture Adjustment**: Initialize the moving images using frames. Introduce the step - wise GRU and the frame - wise GRU. The step - wise GRU retains information between steps, and the frame - wise GRU preserves information between frames.
@@ -58,7 +58,7 @@
   - RL-I2IT framework can achieve a diverse range of stylization levels in video style transfer. It generates stable stylized results across different degrees of stylization and promotes the stability of video style transfer.
   - Our method (step = 1 and 5) outperforms the compared methods in all style settings in terms of the average temporal losses on the MPI Sintel dataset.
 
-### 5. DigitsTransform
+## 5. DigitsTransform
 
 - **Pipline**
   1. **State and Reward Setting**: The state is a concatenation of the predicted image and the target image. Use the Dice score as the reward.
@@ -72,9 +72,3 @@
 <p align="center">
   <img src="Figures/app-mnist.jpg" align="middle" width = "600"/>
 <p>
-
-## 🎖️ 贡献者
-
-<a href="#">
-  <img src="#"  width="800"/>
-</a>
