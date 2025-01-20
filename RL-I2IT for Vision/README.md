@@ -9,14 +9,14 @@
   3. **Auxiliary Learning**: Apply the  $L_1$ loss with an adversarial loss for the auxiliary learning. The final auxiliary learning objective is $\mathcal{J}_{A u x}=\lambda_{rec }\mathcal{L}_{rec }+\lambda_{a d v}\mathcal{L}_{a d v}$, and update $\psi$  and $\phi$ from the planner and the actor accordingly.
   4. **Network Architecture**: For the planner - actor, use a similar architecture with context - encoder except for the skip connections and the stochastic sampling operation in the planner. Use the same network structure for all the types of discriminators except minor changes for different GANs. The convolution layers of the planner, critic, and discriminator use 4×4 kernels, and the downsampling is performed by convolution with a stride of 2. The latent action dimension is set to 256.
 <p align="center">
-  <img src="Figures/FaceInpainting.png" align="middle" width = "600"/>
+  <img src="../Figures/FaceInpainting.png" align="middle" width = "600"/>
 <p>
 
 - **Contribution**
   - RL-I2IT gives obvious visual improvement for synthesizing realistic faces compared with several recent face inpainting methods. The generated faces are sharper and more natural. It achieves the best PSNR and SSIM scores when compared with the existing state-of-the-art methods on Celeba-HQ dataset.
   - The RL-I2IT framework with different GANs is stable and significantly improves the performance of training the planner - actor with SNGAN alone.
 <p align="center">
-  <img src="Figures/resultfaceip2_new.jpg" align="middle" width = "600"/>
+  <img src="../Figures/resultfaceip2_new.jpg" align="middle" width = "600"/>
 <p>
 
 ### 2. Realistic Photo Translation
@@ -27,7 +27,7 @@
 - **Contribution**
   - The proposed method significantly outperforms the pix2pix and PAN models on PSNR, SSIM, and LPIPS over all the datasets and tasks. It even achieves a comparable or better performance than the high-quality pix2pixHD and DRPAN models. The RL-I2IT has much fewer parameters and lower computational complexity compared with other models.
 <p align="center">
-  <img src="Figures/resmasktoimg.jpg" align="middle" width = "600"/>
+  <img src="../Figures/resmasktoimg.jpg" align="middle" width = "600"/>
 <p>
 
 ### 3. Image Style Transfer
@@ -38,7 +38,7 @@
   3. **Network Architecture**: The planner is a neural network consisting of three convolutional layers and a residual layer. After each convolutional layer, there is an instance norm layer and a ReLU layer. The actor has three up - sampling layers. There are three skip connections between the planner and the actor. The critic consists of seven convolutional layers and one fully - connected layer at the end. Use reflection padding instead of zero padding for all the networks.
   4. **Style Learning**: Train the planner and the actor based on collected training data from the agent - environment interaction. Apply the content loss $\mathcal{L}^{C O}$ , style loss $\mathcal{L}^{S T}$ , and total variation regularization $\mathcal{L}^{T V}$ to optimize the model parameters. The final style learning loss is $\mathcal{L}=\mathcal{L}^{C O}+\lambda\mathcal{L}^{S T}+\beta\mathcal{L}^{T V}$.
 <p align="center">
-  <img src="Figures/ImageStyleTransfer.png" align="middle" width = "600"/>
+  <img src="../Figures/ImageStyleTransfer.png" align="middle" width = "600"/>
 <p>
 
 - **Contribution**:
@@ -51,7 +51,7 @@
   1. **State and Network Architecture Adjustment**: Initialize the moving images using frames. Introduce the step - wise GRU and the frame - wise GRU. The step - wise GRU retains information between steps, and the frame - wise GRU preserves information between frames.
   2. **Compound Temporal Regularization**: Add a compound temporal regularization $\mathcal{L}^{C T}$. The final style learning loss is $\mathcal{L}=\mathcal{L}^{C O}+\lambda\mathcal{L}^{S T}+\beta\mathcal{L}^{T V}+\zeta\mathcal{L}^{C T}$.
 <p align="center">
-  <img src="Figures/nst_video_overview.png" align="middle" width = "600"/>
+  <img src="../Figures/nst_video_overview.png" align="middle" width = "600"/>
 <p>
 
 - **Contribution**:
@@ -64,7 +64,7 @@
   1. **State and Reward Setting**: The state is a concatenation of the predicted image and the target image. Use the Dice score as the reward.
   2. **Auxiliary Learning and Network Architecture**: Leverage the NCC loss for auxiliary learning. Use a very simple network structure to construct the planner, the actor, and the critic. The plan is a one - channel 7×7 feature map (49 - dimensional plan), and the actor outputs a deformation field, which is used to transform the source image by spatial transformer network (STN). All convolution operations use a 3×3 kernel with the LeakyReLU activation function. The downsampling operation is performed by max - pooling, and all upsampling operations are performed with the nearest interpolation.
 <p align="center">
-  <img src="Figures/DigitsTransform.png" align="middle" width = "600"/>
+  <img src="../Figures/DigitsTransform.png" align="middle" width = "600"/>
 <p>
 
 - **Contribution**
