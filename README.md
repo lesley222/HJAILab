@@ -1,7 +1,5 @@
 # <center> RL-I2IT: Image-to-Image Translation with Deep Reinforcement Learning
-<p align="center">
-    <a href="https://arxiv.org/abs/2309.13672">paper</a>
-</p>
+<a href="https://arxiv.org/abs/2309.13672">paper</a>
 
 ## ⭐ Introduction
 
