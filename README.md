@@ -98,5 +98,3 @@ Most existing Image-to-Image Translation (I2IT) methods generate images in a sin
 <a href="#">
   <img src="#"  width="800"/>
 </a>
-
-
