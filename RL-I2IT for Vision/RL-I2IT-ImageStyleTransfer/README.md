@@ -2,7 +2,7 @@ This is the experimental code for Image Style Transfer.
 
 # RL-INST-Image
 
-![/figures/imgpng](\figures\img.png?msec=1737379842985)
+![/figures/imgpng](./figures/img.png)
 
 ## Requirements
 
