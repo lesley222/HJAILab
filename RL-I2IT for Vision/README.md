@@ -70,5 +70,5 @@
 - **Contribution**
   - RL-I2IT can transform digits step - wise and capture the style and shape accurately. It is robust to complex transformations and better at recovering the details and the shapes of the target digit than VoxelMorph (VM). It significantly outperforms VM over all digits both quantitatively and qualitatively.
 <p align="center">
-  <img src="Figures/app-mnist.jpg" align="middle" width = "600"/>
+  <img src="../Figures/app-mnist.jpg" align="middle" width = "600"/>
 <p>
