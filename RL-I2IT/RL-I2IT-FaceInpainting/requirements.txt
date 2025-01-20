@@ -1,9 +1,0 @@
-numpy
-torch
-torchvision
-python-mnist
-pillow
-opencv-python
-matplotlib
-seaborn
-tensorboardX
