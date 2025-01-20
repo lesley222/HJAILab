@@ -2,7 +2,7 @@ This is the experimental code for Image Style Transfer.
 
 # RL-INST-Image
 
-![/figures/imgpng](file://C:\Users\Chengming\Desktop\HJAILab-OPEN-main\RL-I2IT\RL-I2IT for Vision\RL-I2IT-ImageStyleTransfer\figures\img.png?msec=1737379842985)
+![/figures/imgpng](RL-I2IT\RL-I2IT for Vision\RL-I2IT-ImageStyleTransfer\figures\img.png?msec=1737379842985)
 
 ## Requirements
 
