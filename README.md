@@ -94,7 +94,4 @@ Most existing Image-to-Image Translation (I2IT) methods generate images in a sin
 <p>
 
 ## 🎖️ 贡献者
-
-<a href="#">
-  <img src="#"  width="800"/>
-</a>
+Xin Wang, Ziwei Luo, Jing Hu, Chengming Feng, Shu Hu, Bin Zhu, Xi Wu, Hongtu Zhu, Xin Li, Siwei Lyu
